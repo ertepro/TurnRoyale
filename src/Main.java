@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Troop Troop1 = new Troop();
+        String name= "Skeleton"     ;
+     var sender=TroopFactory.createTroop(name);
+     sender.send(Troop1);
+
+
+
     }
 }

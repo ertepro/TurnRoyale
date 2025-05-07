@@ -1,8 +1,17 @@
-public abstract class Troop {
-    private String name;
-    private int aDmg;
-    private int gDmg;
-    private int aDef;
-    private int gDef;
-    private int atkSpeed;
+public class Troop {
+   public String name;
+    public String Type;
+    public int aDmg;
+    public int gDmg;
+    public int aDef;
+    public int gDef;
+    public int atkSpeed;
+
+   public void setGround(){
+        Type="Ground";
+    }
+    public void setAir(){
+        Type="Air";
+    }
+
 }
