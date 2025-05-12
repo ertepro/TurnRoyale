@@ -2,38 +2,102 @@ package package1;
 
 public class State_indeck implements TroopActions_StateInterface {
 
+    //getters for some basic meta stats
     @Override
     public String getName(Troop t){
         return t.get_n();
     }
 
-    String getType(Troop t);
-    int getManaCost(Troop t);
+    @Override
+    public String getType(Troop t){
+        return t.get_t();
+    }
 
-    // the initial values of such [active/in-deck/battling]
-    int getGroundDamage(Troop t);
-    int getAirDamage(Troop t);
-    int getGroundDefense(Troop t);
-    int getAirDefense(Troop t);
-    int getAtkSpeed(Troop t);
+    @Override
+    public int getManaCost(Troop t){
+        return t.get_m();
+    }
 
-    // the getters of the current [active/in-deck/battling]
-    int getCurrGroundDamage(Troop t);
-    int getCurrAirDamage(Troop t);
-    int getCurrGroundDefense(Troop t);
-    int getCurrAirDefense(Troop t);
-    int getCurrAtkSpeed(Troop t);
+    //getters for some basic battle stats
+    @Override
+    public int getGroundDamage(Troop t){
+        return t.get_g_atk();
+    }
 
-    // setters [battling]
-    void setCurrGroundDamage(Troop t, int currGroundDamage);
-    void setCurrAirDamage(Troop t, int currAirDamage);
-    void setCurrGroundDefense(Troop t, int currGroundDefense);
-    void setCurrGroundDefense(Troop t, int currGroundDefense);
-    void setCurrAirDefense(Troop t, int currAirDefense);
-    void setCurrAtkSpeed(Troop t, int currAtkSpeed);
-    void setCurrAtkSpeed(Troop t, int currAtkSpeed);
+    @Override
+    public int getAirDamage(Troop t){
+        return t.get_a_atk();
+    }
 
-    // strategy
-    void specialAbility(Troop t);
+    @Override
+    public int getGroundDefense(Troop t){
+        return t.get_g_df();
+    }
 
+    @Override
+    public int getAirDefense(Troop t){
+        return t.get_a_df();
+    }
+
+    @Override
+    public int getAtkSpeed(Troop t){
+        return t.get_as();
+    }
+
+    //methods this state cannot employ
+
+    @Override
+    public int getCurrGroundDamage(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getCurrGroundDamage(Troop t)] from [in-deck] state");
+    }
+
+    @Override
+    public int getCurrAirDamage(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getCurrAirDamage(Troop t)] from [in-deck] state");
+    }
+
+    @Override
+    public int getCurrGroundDefense(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getCurrGroundDefense(Troop t)] from [in-deck] state");
+    }
+
+    @Override
+    public int getCurrAirDefense(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getCurrAirDefense(Troop t)] from [in-deck] state");
+    }
+
+    @Override
+    public int getCurrAtkSpeed(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getCurrAtkSpeed(Troop t)] from [in-deck] state");
+    }
+
+    @Override
+    public void setCurrGroundDamage(Troop t, int currGroundDamage) {
+        throw new UnsupportedOperationException("Error: tried [setCurrGroundDamage(Troop t, int n)] from [in-deck] state");
+    }
+
+    @Override
+    public void setCurrAirDamage(Troop t, int currAirDamage) {
+        throw new UnsupportedOperationException("Error: tried [setCurrAirDamage(Troop t, int n)] from [in-deck] state");
+    }
+
+    @Override
+    public void setCurrGroundDefense(Troop t, int currGroundDefense) {
+        throw new UnsupportedOperationException("Error: tried [setCurrGroundDefense(Troop t, int n)] from [in-deck] state");
+    }
+
+    @Override
+    public void setCurrAirDefense(Troop t, int currAirDefense) {
+        throw new UnsupportedOperationException("Error: tried [setCurrAirDefense(Troop t, int n)] from [in-deck] state");
+    }
+
+    @Override
+    public void setCurrAtkSpeed(Troop t, int currAtkSpeed) {
+        throw new UnsupportedOperationException("Error: tried [setCurrAtkSpeed(Troop t, int n)] from [in-deck] state");
+    }
+
+    @Override
+    public void specialAbility(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [specialAbility(Troop t, int n)] from [in-deck] state");
+    }
 }

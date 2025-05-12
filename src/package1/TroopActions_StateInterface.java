@@ -34,9 +34,7 @@ public interface TroopActions_StateInterface {
     void setCurrGroundDamage(Troop t, int currGroundDamage);
     void setCurrAirDamage(Troop t, int currAirDamage);
     void setCurrGroundDefense(Troop t, int currGroundDefense);
-    void setCurrGroundDefense(Troop t, int currGroundDefense);
     void setCurrAirDefense(Troop t, int currAirDefense);
-    void setCurrAtkSpeed(Troop t, int currAtkSpeed);
     void setCurrAtkSpeed(Troop t, int currAtkSpeed);
 
     // strategy
