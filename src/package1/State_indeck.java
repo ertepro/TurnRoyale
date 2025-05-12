@@ -1,32 +1,39 @@
 package package1;
 
-public class State_indeck {
-    // basic values [active/in-deck/battling]
-    String getName();
-    String getType();
-    int getManaCost();
+public class State_indeck implements TroopActions_StateInterface {
+
+    @Override
+    public String getName(Troop t){
+        return t.get_n();
+    }
+
+    String getType(Troop t);
+    int getManaCost(Troop t);
 
     // the initial values of such [active/in-deck/battling]
-    int getGroundDamage();
-    int getAirDamage();
-    int getGroundDefense();
-    int getAirDefense();
-    int getAtkSpeed();
+    int getGroundDamage(Troop t);
+    int getAirDamage(Troop t);
+    int getGroundDefense(Troop t);
+    int getAirDefense(Troop t);
+    int getAtkSpeed(Troop t);
 
     // the getters of the current [active/in-deck/battling]
-    int getCurrGroundDamage();
-    int getCurrAirDamage();
-    int getCurrGroundDefense();
-    int getCurrAirDefense();
-    int getCurrAtkSpeed();
+    int getCurrGroundDamage(Troop t);
+    int getCurrAirDamage(Troop t);
+    int getCurrGroundDefense(Troop t);
+    int getCurrAirDefense(Troop t);
+    int getCurrAtkSpeed(Troop t);
 
     // setters [battling]
-    void setCurrGroundDamage(int currGroundDamage);
-    void setCurrAirDamage(int currAirDamage);
-    void setCurrGroundDefense(int currGroundDefense);
-    void setCurrAirDefense(int currAirDefense);
-    void setCurrAtkSpeed(int currAtkSpeed);
+    void setCurrGroundDamage(Troop t, int currGroundDamage);
+    void setCurrAirDamage(Troop t, int currAirDamage);
+    void setCurrGroundDefense(Troop t, int currGroundDefense);
+    void setCurrGroundDefense(Troop t, int currGroundDefense);
+    void setCurrAirDefense(Troop t, int currAirDefense);
+    void setCurrAtkSpeed(Troop t, int currAtkSpeed);
+    void setCurrAtkSpeed(Troop t, int currAtkSpeed);
 
     // strategy
-    void specialAbility();
+    void specialAbility(Troop t);
+
 }
