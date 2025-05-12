@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34f09ee8-d171-4c0b-9ffe-3dc59296a09c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/package1/ATK_TroopDecoratorPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/package1/DEF_TroopDecoratorPattern.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/package1/TroopDecoratorPattern.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package1/Troop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/Troop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +28,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Drgit-dev"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ertepro/TurnRoyale.git",
+    "accountId": "0b33e935-7cf0-4dbc-91db-e85f1f6b5298"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -33,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "sam",
@@ -51,17 +69,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="TurnRoyale" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="TurnRoyale" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="TurnRoyale" />
       <option name="ENV_FILES" value="" />
@@ -146,6 +153,17 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TurnRoyale" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TurnRoyale" />
+      <option name="filePath" />
       <method v="2" />
     </configuration>
   </component>

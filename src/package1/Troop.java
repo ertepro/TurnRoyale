@@ -65,7 +65,7 @@ public abstract class Troop {
         return a_df;
     }
     public void set_a_df(int a_df){
-        this.a_df = a_df;
+        this.a_df = cur_a_df;
     }
     public int get_cur_a_df(){
         return cur_a_df;
@@ -75,7 +75,7 @@ public abstract class Troop {
         return g_df;
     }
     public void set_g_df(int g_df){
-        this.g_df = g_df;
+        this.g_df = cur_g_df;
     }
     public int get_cur_g_df(){
         return cur_g_df;
@@ -85,7 +85,7 @@ public abstract class Troop {
         return a_atk;
     }
     public void set_a_atk(int a_atk){
-        this.a_atk = a_atk;
+        this.a_atk = cur_a_atk;
     }
     public int get_cur_a_atk(){
         return cur_a_atk;
@@ -95,7 +95,7 @@ public abstract class Troop {
         return g_atk;
     }
     public void set_g_atk(int g_atk){
-        this.g_atk = g_atk;
+        this.g_atk = cur_g_atk;
     }
     public int get_cur_g_atk(){
         return cur_g_atk;
