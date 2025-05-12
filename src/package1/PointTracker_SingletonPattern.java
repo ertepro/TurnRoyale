@@ -8,6 +8,7 @@ package package1;
 public class PointTracker_SingletonPattern {
     private int player1_score;
     private int player2_score;
+    private int game_rule = 1;
 
     private static PointTracker_SingletonPattern instance;
 
@@ -34,5 +35,13 @@ public class PointTracker_SingletonPattern {
     }
     public void setPlayer2_score(int player2_score) {
         this.player2_score = player2_score;
+    }
+
+    public int get_game_rule() {
+        return game_rule;
+    }
+
+    public void set_game_rule(int game_rule) {
+        this.game_rule = game_rule;
     }
 }

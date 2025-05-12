@@ -21,11 +21,12 @@ public class Deck {
 
     // Get the first 3 cards
     public List<Troop> getFirstThree() {
-        if (cards.size() != 7) { // 0 1 2
-            throw new IllegalArgumentException(".error - WTF there supposed to be 7");
+        if (cards.size() != 7) {
+            throw new IllegalArgumentException("Error - there should be exactly 7 cards in the deck.");
         }
-        return cards.subList(0, 2);
+        return cards.subList(0, 3);
     }
+
 
     // Move the card to the bottom
     public void returnToBottom(Troop troop) {

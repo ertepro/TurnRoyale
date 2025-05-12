@@ -10,9 +10,17 @@ public class Tower {
         return Health;
     }
 
-    public void getAttacked (int dmg) {
+    public void getAttacked (int dmg,PointTracker_SingletonPattern a,int who) {
         Health -= dmg;
-        observer.update(Health);
+        if(who == 1){
+            a.setPlayer1_score(Health);
+        } else {
+            a.setPlayer2_score(Health);
+        }
+
+        if(observer.update(Health) == 0){
+            a.set_game_rule(0);
+        }
     }
 
     public void setObserver (TowerUpdate_ObserverPattern observer) {

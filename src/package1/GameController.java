@@ -1,6 +1,7 @@
 package package1;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class GameController {
@@ -124,6 +125,69 @@ public class GameController {
         //we create the point tracker
         PointTracker_SingletonPattern score = PointTracker_SingletonPattern.getInstance();
 
+        while (score.get_game_rule() == 1) {
+            // === Player 1 Turn ===
+            System.out.println("\nPlayer 1, your turn:");
+            plr1.getDeck().shuffle();
+            List<Troop> hand1 = plr1.getDeck().getFirstThree();
 
+            displayHand(hand1);
+            Troop chosenCard1 = chooseCard(scan, hand1, plr1);
+
+            // === Player 2 Turn ===
+            System.out.println("\nPlayer 2, your turn:");
+            plr2.getDeck().shuffle();
+            List<Troop> hand2 = plr2.getDeck().getFirstThree();
+
+            displayHand(hand2);
+            Troop chosenCard2 = chooseCard(scan, hand2, plr2);
+
+            // === Game Logic After Selection ===
+            if (chosenCard1 != null && chosenCard2 != null) {
+                // Both players played a card
+            } else if (chosenCard1 != null) {
+                // Only player 1 played a card
+            } else if (chosenCard2 != null) {
+                // Only player 2 played a card
+            } else {
+                // Both skipped
+            }
+        }
+
+    }
+
+    private void displayHand(List<Troop> hand) {
+        for (int i = 0; i < hand.size(); i++) {
+            Troop t = hand.get(i);
+            TroopActions_StateInterface a = new State_active();
+            t.set_state(a);
+            System.out.println((i + 1) + ": " + a.getName(t));
+        }
+    }
+
+    private Troop chooseCard(Scanner scan, List<Troop> hand, Player player) {
+        System.out.println("Choose card (0 = skip, 1-3 = card):");
+        String answer = scan.nextLine();
+
+        Troop chosen = null;
+        switch (answer) {
+            case "1":
+            case "2":
+            case "3":
+                int index = Integer.parseInt(answer) - 1;
+                if (index < hand.size()) {
+                    chosen = hand.get(index);
+                }
+                break;
+            case "0":
+                // Skip turn
+                break;
+            default:
+                System.out.println("Invalid input. Skipping turn.");
+                break;
+        }
+
+        player.setMana(1); // Always gain 1 mana regardless of play
+        return chosen;
     }
 }
