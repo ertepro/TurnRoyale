@@ -14,6 +14,14 @@ public abstract class Troop {
     protected int a_atk;
     protected int g_atk;
 
+    //current game stats
+    protected int cur_atk_spd;
+    protected int cur_a_df;
+    protected int cur_g_df;
+    protected int cur_a_atk;
+    protected int cur_g_atk;
+
+
     // patterns
     protected TroopActions_StateInterface state;
     protected TroopSpecialATK_StrategyInterface strategy;
@@ -49,12 +57,18 @@ public abstract class Troop {
     public void set_as(int atk){
         atk_spd = atk;
     }
+    public int get_cur_as(){
+        return cur_atk_spd;
+    }
 
     public int get_a_df(){
         return a_df;
     }
     public void set_a_df(int a_df){
         this.a_df = a_df;
+    }
+    public int get_cur_a_df(){
+        return cur_a_df;
     }
 
     public int get_g_df(){
@@ -63,6 +77,9 @@ public abstract class Troop {
     public void set_g_df(int g_df){
         this.g_df = g_df;
     }
+    public int get_cur_g_df(){
+        return cur_g_df;
+    }
 
     public int get_a_atk(){
         return a_atk;
@@ -70,12 +87,18 @@ public abstract class Troop {
     public void set_a_atk(int a_atk){
         this.a_atk = a_atk;
     }
+    public int get_cur_a_atk(){
+        return cur_a_atk;
+    }
 
     public int get_g_atk(){
         return g_atk;
     }
     public void set_g_atk(int g_atk){
         this.g_atk = g_atk;
+    }
+    public int get_cur_g_atk(){
+        return cur_g_atk;
     }
 
     //state methods

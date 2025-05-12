@@ -48,27 +48,27 @@ public class State_battle implements TroopActions_StateInterface {
 
     @Override
     public int getCurrGroundDamage(Troop t) {
-        return t.get_g_atk();
+        return t.get_cur_g_atk();
     }
 
     @Override
     public int getCurrAirDamage(Troop t) {
-        return t.get_a_atk();
+        return t.get_cur_a_atk();
     }
 
     @Override
     public int getCurrGroundDefense(Troop t) {
-        return t.get_a_df();
+        return t.get_cur_g_df();
     }
 
     @Override
     public int getCurrAirDefense(Troop t) {
-        return t.get_a_df();
+        return t.get_cur_a_df();
     }
 
     @Override
     public int getCurrAtkSpeed(Troop t) {
-        return t.get_a_atk();
+        return t.get_cur_as();
     }
 
     @Override
@@ -95,7 +95,6 @@ public class State_battle implements TroopActions_StateInterface {
     public void setCurrAtkSpeed(Troop t, int currAtkSpeed) {
         t.set_as(currAtkSpeed);
     }
-
 
     //strategy pattern methods
     @Override
