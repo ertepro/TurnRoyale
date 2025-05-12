@@ -109,5 +109,21 @@ public class GameController {
             }
         }
 
+        //we create the 2 players
+        Player plr1 = new Player(deck1);
+        TowerUpdate_ObserverPattern obs1 = new TowerUpdate_TowerObserver();
+        Tower t1 = new Tower();
+        t1.setObserver(obs1);
+
+
+        Player plr2 = new Player(deck2);
+        TowerUpdate_ObserverPattern obs2 = new TowerUpdate_TowerObserver();
+        Tower t2 = new Tower();
+        t2.setObserver(obs2);
+
+        //we create the point tracker
+        PointTracker_SingletonPattern score = PointTracker_SingletonPattern.getInstance();
+
+
     }
 }
