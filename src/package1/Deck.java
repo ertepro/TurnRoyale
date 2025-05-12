@@ -27,6 +27,11 @@ public class Deck {
         return cards.subList(0, 2);
     }
 
+    // Get the 7 cards
+    public List<Troop> getAllCards() {
+        return cards;
+    }
+
     // Move the card to the bottom
     public void returnToBottom(Troop troop) {
         cards.add(troop);

@@ -10,6 +10,9 @@ public class Tower {
     }
 
     public void getAttacked (int dmg) {
+        if(Health - dmg <= 0){
+            Health = 0;
+        }
         Health -= dmg;
     }
 }

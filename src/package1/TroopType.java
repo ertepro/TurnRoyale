@@ -23,6 +23,8 @@ public enum TroopType {
     MANA_WIZARD("Mana Wizard", "Special", 0, 0, 0, 0, 0),
     STUN_GOLEM("Stun Golem", "Special", 0, 0, 0, 0, 0);
 
+    //The special need some stats you can make them up
+
     private final String name;
     private final String type;
     private final int manaCost;

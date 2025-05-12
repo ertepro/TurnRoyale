@@ -6,6 +6,7 @@ public class Player {
     private Deck deck;
     private int mana = 0; // Max mana 10 ???
     private int manaRegen = 1; // it should change when special cards
+    private int consecHits = 0;
     // IDK
 
     // Add mana manaRegen
