@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Deck {
-    private final List<Troop> cards = new ArrayList<>();
+    public List<Troop> cards = new ArrayList<>();
 
     // Select the troops to the deck
     public void addCard(Troop troop) {
@@ -22,7 +22,7 @@ public class Deck {
     // Get the first 3 cards
     public List<Troop> getFirstThree() {
         if (cards.size() != 7) { // 0 1 2
-            throw new IllegalArgumentException("WTF there supossed to be 7");
+            throw new IllegalArgumentException(".error - WTF there supposed to be 7");
         }
         return cards.subList(0, 2);
     }

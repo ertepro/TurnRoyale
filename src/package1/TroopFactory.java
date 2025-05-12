@@ -3,6 +3,9 @@ package package1;
 import package1.Factory.*;
 
 public class TroopFactory {
+
+    TroopFactory() {}
+
     public static Troop createTroop(String name) {
         if (name.equalsIgnoreCase("Skeletons")) {
             return new Skeleton();

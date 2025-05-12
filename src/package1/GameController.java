@@ -1,7 +1,19 @@
 package package1;
 
+import java.util.ArrayList;
+
 public class GameController {
 
+    public void run()
+    {
+        //we create our factory
+        TroopFactory factory = new TroopFactory();
+
+        //here we begin all the game
+        System.out.println("Player 1, choose your deck");
+
+        System.out.println("Player 2, choose your deck");
+    }
     // START
     // add score
     // create players
