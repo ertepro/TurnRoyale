@@ -8,49 +8,91 @@ public class TroopFactory {
 
     public static Troop createTroop(String name) {
         if (name.equalsIgnoreCase("Skeletons")) {
-            return new Skeleton();
+            Skeleton t = new Skeleton();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Archers")) {
-            return new Archers();
+            Archers t = new Archers();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Arrows")) {
-            return new Arrows();
+            Arrows t = new Arrows();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Giant")) {
-            return new Giant();
+            Giant t = new Giant();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Mini_pekka")) {
-            return new MiniPekka();
+            MiniPekka t = new MiniPekka();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Baby_dragon")) {
-            return new BabyDragon();
+            BabyDragon t = new BabyDragon();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Musketeer")) {
-            return new Musketeer();
+            Musketeer t = new Musketeer();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Prince")) {
-            return new Prince();
+            Prince t = new Prince();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Balloon")) {
-            return new Balloon();
+            Balloon t = new Balloon();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Barbarians")) {
-            return new Barbarians();
+            Barbarians t = new Barbarians();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Guards")) {
-            return new Guards();
+            Guards t = new Guards();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Giant_skeleton")) {
-            return new GiantSkeleton();
+            GiantSkeleton t = new GiantSkeleton();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Witch")) {
-            return new Witch();
+            Witch t = new Witch();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Valkyrie")) {
-            return new Valkyrie();
+            Valkyrie t = new Valkyrie();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Wizard")) {
-            return new Wizard();
+            Wizard t = new Wizard();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Executioner")) {
-            return new Executioner();
+            Executioner t = new Executioner();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Hunter")) {
-            return new Hunter();
+            Hunter t = new Hunter();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Royal_ghost")) {
-            return new RoyalGhost();
+            RoyalGhost t = new RoyalGhost();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Energy_collector")) {
-            return new EnergyCollector();
+            EnergyCollector t = new EnergyCollector();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Mana_wizard")) {
-            return new ManaWizard();
+            ManaWizard t = new ManaWizard();
+            t.createTroop();
+            return t;
         } else if (name.equalsIgnoreCase("Stun_golem")) {
-            return new StunGolem();
+            StunGolem t = new StunGolem();
+            t.createTroop();
+            return t;
         } else {
-            return null;  // doesn't match anything
+            return null;
         }
     }
 }
