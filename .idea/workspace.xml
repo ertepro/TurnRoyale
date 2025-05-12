@@ -5,39 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34f09ee8-d171-4c0b-9ffe-3dc59296a09c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Archers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Arrows.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/BabyDragon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Balloon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Barbarians.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/EnergyCollector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Executioner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Giant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/GiantSkeleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Guards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Hunter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/ManaWizard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/MiniPekka.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Musketeer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Prince.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/RoyalGhost.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Skeleton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/StunGolem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Valkyrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Witch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Factory/Wizard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/State_active.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/State_battle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/State_indeck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/TroopActions_StateInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/TroopCreate_FactoryInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package1/Troop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/Troop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package1/TroopFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/TroopFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,19 +23,158 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;sam&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
-  }
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
 }</component>
+  <component name="ProjectId" id="2wzwApG5TuQdxh5H6ht9rxafzkS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "sam",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/sampo/Desktop/Coding/Git/SoftwareDesign",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sampo\Desktop\Coding\Git\SoftwareDesign\TurnRoyale\src\package1" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="TurnRoyale" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="TurnRoyale" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="TurnRoyale" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="TurnRoyale" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="TurnRoyale" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="TurnRoyale" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="TurnRoyale" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34f09ee8-d171-4c0b-9ffe-3dc59296a09c" name="Changes" comment="" />
+      <created>1747057570941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747057570941</updated>
+      <workItem from="1747057572667" duration="49000" />
+      <workItem from="1747057635948" duration="100000" />
+      <workItem from="1747057745999" duration="22000" />
+      <workItem from="1747057950132" duration="132000" />
+      <workItem from="1747058089654" duration="444000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
