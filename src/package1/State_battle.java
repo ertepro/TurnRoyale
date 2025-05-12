@@ -97,8 +97,17 @@ public class State_battle implements TroopActions_StateInterface {
     }
 
     @Override
-    public void specialAbility(Troop t) {
-        //i havent done the strategy pattern yet
-        return;
+    public void set_specialAbility(Troop t,TroopSpecialATK_StrategyInterface strategy){
+
+    }
+
+    @Override
+    public TroopSpecialATK_StrategyInterface get_specialAbility(Troop t){
+
+    }
+
+    @Override
+    public void use_specialAbility(Troop t){
+
     }
 }

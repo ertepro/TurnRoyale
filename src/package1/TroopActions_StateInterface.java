@@ -38,6 +38,7 @@ public interface TroopActions_StateInterface {
     void setCurrAtkSpeed(Troop t, int currAtkSpeed);
 
     // strategy
-    void specialAbility(Troop t);
-
+    void set_specialAbility(Troop t,TroopSpecialATK_StrategyInterface strategy);
+    TroopSpecialATK_StrategyInterface get_specialAbility(Troop t);
+    void use_specialAbility(Troop t);
 }

@@ -97,7 +97,17 @@ public class State_active implements TroopActions_StateInterface {
     }
 
     @Override
-    public void specialAbility(Troop t) {
-        throw new UnsupportedOperationException("Error: tried [specialAbility(Troop t, int n)] from [active] state");
+    public void set_specialAbility(Troop t,TroopSpecialATK_StrategyInterface strategy){
+        throw new UnsupportedOperationException("Error: tried [set_specialAbility(Troop t, Strategy] from [active] state");
+    }
+
+    @Override
+    public TroopSpecialATK_StrategyInterface get_specialAbility(Troop t){
+        throw new UnsupportedOperationException("Error: tried [get_specialAbility(Troop t)] from [active] state");
+    }
+
+    @Override
+    public void use_specialAbility(Troop t){
+        throw new UnsupportedOperationException("Error: tried [use_specialAbility(Troop t)] from [active] state");
     }
 }
