@@ -1,17 +1,16 @@
 package package1;
 
 public abstract class Troop {
-    private TroopType TroopType;
 
-    public Troop(TroopType TroopType) {
-        this.TroopType = TroopType;
-    }
+    // meta stats
+    protected String name;
+    protected int mana_cost;
 
-    public String getName() { return TroopType.getName(); }
-    public String getType() { return TroopType.getType(); }
-    public int getManaCost() { return TroopType.getManaCost(); }
-    public int getGroundDamage() { return TroopType.getGroundDamage(); }
-    public int getAirDamage() { return TroopType.getAirDamage(); }
-    public int getGroundDefense() { return TroopType.getGroundDefense(); }
-    public int getAirDefense() { return TroopType.getAirDefense(); }
+    // game stats
+    protected String type;
+    protected int atk_spd;
+    protected int a_df;
+    protected int g_df;
+    protected int a_atk;
+    protected int g_atk;
 }

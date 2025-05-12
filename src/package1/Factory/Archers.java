@@ -1,0 +1,16 @@
+package package1.Factory;
+
+public class Archers extends package1.Troop implements package1.TroopCreate_FactoryInterface {
+    @Override
+    public void createTroop() {
+        this.name = "Archers";
+        this.type = "Ground";
+        this.mana_cost = 2;
+
+        this.atk_spd = 1;
+        this.a_df = 15;
+        this.a_atk = 15;
+        this.g_df = 1;
+        this.g_atk = 2;
+    }
+}
