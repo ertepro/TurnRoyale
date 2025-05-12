@@ -8,12 +8,14 @@ public abstract class Troop {
     protected int mana_cost;
 
     // game stats
-
     protected int atk_spd;
     protected int a_df;
     protected int g_df;
     protected int a_atk;
     protected int g_atk;
+
+    // patterns
+    protected TroopActions_StateInterface state;
 
     //basic functions [DO NOT USE OUTSIDE STATE PATTERN]
 
@@ -73,6 +75,15 @@ public abstract class Troop {
     }
     public void set_g_atk(int g_atk){
         this.g_atk = g_atk;
+    }
+
+    //finally the state methods
+    public void set_state(TroopActions_StateInterface state){
+        this.state = state;
+    }
+
+    public TroopActions_StateInterface get_state(){
+        return state;
     }
 
 }
