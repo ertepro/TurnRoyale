@@ -44,7 +44,7 @@ public class State_battle implements TroopActions_StateInterface {
         return t.get_as();
     }
 
-    //methods this state cannot employ
+    // -- in game methods
 
     @Override
     public int getCurrGroundDamage(Troop t) {
@@ -96,18 +96,20 @@ public class State_battle implements TroopActions_StateInterface {
         t.set_as(currAtkSpeed);
     }
 
+
+    //strategy pattern methods
     @Override
     public void set_specialAbility(Troop t,TroopSpecialATK_StrategyInterface strategy){
-
+        t.set_strategy(strategy);
     }
 
     @Override
     public TroopSpecialATK_StrategyInterface get_specialAbility(Troop t){
-
+        return t.get_strategy();
     }
 
     @Override
     public void use_specialAbility(Troop t){
-
+        t.use_special_atk();
     }
 }

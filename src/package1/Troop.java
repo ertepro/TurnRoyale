@@ -16,6 +16,7 @@ public abstract class Troop {
 
     // patterns
     protected TroopActions_StateInterface state;
+    protected TroopSpecialATK_StrategyInterface strategy;
 
     //basic functions [DO NOT USE OUTSIDE STATE PATTERN]
 
@@ -77,7 +78,7 @@ public abstract class Troop {
         this.g_atk = g_atk;
     }
 
-    //finally the state methods
+    //state methods
     public void set_state(TroopActions_StateInterface state){
         this.state = state;
     }
@@ -86,4 +87,18 @@ public abstract class Troop {
         return state;
     }
 
+    //strategy methods
+    public void set_strategy(TroopSpecialATK_StrategyInterface strategy){
+        this.strategy = strategy;
+    }
+
+    public TroopSpecialATK_StrategyInterface get_strategy(){
+        return strategy;
+    }
+
+    public void use_special_atk(){
+        if(strategy != null){
+            strategy.specialATK();
+        }
+    }
 }
