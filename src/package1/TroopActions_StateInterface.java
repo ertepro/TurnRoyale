@@ -11,19 +11,19 @@ package package1;
 
 public interface TroopActions_StateInterface {
 
-    // basic values [active/in-deck/battling]
-    String getName(Troop t);
+    // basic values [active/battling]
+    String getName(Troop t); // [+ in-deck]
     String getType(Troop t);
     int getManaCost(Troop t);
 
-    // the initial values of such [active/in-deck/battling]
+    // the initial values of such [active/battling]
     int getGroundDamage(Troop t);
     int getAirDamage(Troop t);
     int getGroundDefense(Troop t);
     int getAirDefense(Troop t);
     int getAtkSpeed(Troop t);
 
-    // the getters of the current [active/in-deck/battling]
+    // the getters of the current [battling]
     int getCurrGroundDamage(Troop t);
     int getCurrAirDamage(Troop t);
     int getCurrGroundDefense(Troop t);

@@ -9,39 +9,39 @@ public class State_indeck implements TroopActions_StateInterface {
     }
 
     @Override
-    public String getType(Troop t){
-        return t.get_t();
+    public String getType(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getType(Troop t)] from [in-deck] state");
     }
 
     @Override
-    public int getManaCost(Troop t){
-        return t.get_m();
+    public int getManaCost(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getManaCost(Troop t)] from [in-deck] state");
     }
 
-    //getters for some basic battle stats
+    // Getter for some basic battle stats
     @Override
-    public int getGroundDamage(Troop t){
-        return t.get_g_atk();
-    }
-
-    @Override
-    public int getAirDamage(Troop t){
-        return t.get_a_atk();
+    public int getGroundDamage(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getGroundDamage(Troop t)] from [in-deck] state");
     }
 
     @Override
-    public int getGroundDefense(Troop t){
-        return t.get_g_df();
+    public int getAirDamage(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getAirDamage(Troop t)] from [in-deck] state");
     }
 
     @Override
-    public int getAirDefense(Troop t){
-        return t.get_a_df();
+    public int getGroundDefense(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getGroundDefense(Troop t)] from [in-deck] state");
     }
 
     @Override
-    public int getAtkSpeed(Troop t){
-        return t.get_as();
+    public int getAirDefense(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getAirDefense(Troop t)] from [in-deck] state");
+    }
+
+    @Override
+    public int getAtkSpeed(Troop t) {
+        throw new UnsupportedOperationException("Error: tried [getAtkSpeed(Troop t)] from [in-deck] state");
     }
 
     //methods this state cannot employ
