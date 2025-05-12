@@ -2,6 +2,7 @@ package package1;
 
 public class Tower {
     private int Health = 100;
+    TowerUpdate_ObserverPattern observer;
 
     public Tower (){}
 
@@ -11,5 +12,6 @@ public class Tower {
 
     public void getAttacked (int dmg) {
         Health -= dmg;
+        observer.update(Health);
     }
 }
