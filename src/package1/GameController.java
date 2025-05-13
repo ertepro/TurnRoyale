@@ -127,7 +127,7 @@ public class GameController {
 
         while (score.get_game_rule() == 1) {
             // === Player 1 Turn ===
-            System.out.println("\nPlayer 1, your turn:");
+            System.out.println("\nPlayer 1 mana:"+plr1.getMana()+" your turn:");
             plr1.getDeck().shuffle();
             List<Troop> hand1 = plr1.getDeck().getFirstThree();
 
@@ -135,7 +135,7 @@ public class GameController {
             Troop chosenCard1 = chooseCard(scan, hand1, plr1);
 
             // === Player 2 Turn ===
-            System.out.println("\nPlayer 2, your turn:");
+            System.out.println("\nPlayer 2 mana:"+plr2.getMana()+" your turn:");
             plr2.getDeck().shuffle();
             List<Troop> hand2 = plr2.getDeck().getFirstThree();
 
@@ -144,14 +144,35 @@ public class GameController {
 
             // === Game Logic After Selection ===
             if (chosenCard1 != null && chosenCard2 != null) {
-                // Both players played a card
+
             } else if (chosenCard1 != null) {
-                // Only player 1 played a card
+                //we just apply all the dmg of the troop
+                TroopActions_StateInterface a = new State_battle();
+                int dmg = a.getGroundDamage(chosenCard2);
+                plr1.get_tower().getAttacked(dmg,score,2);
             } else if (chosenCard2 != null) {
-                // Only player 2 played a card
+                TroopActions_StateInterface a = new State_battle();
+                int dmg = a.getGroundDamage(chosenCard1);
+                plr2.get_tower().getAttacked(dmg,score,1);
             } else {
-                // Both skipped
+                //the case where the 2 troops fight each other
+                TroopActions_StateInterface a = new State_battle();
+                TroopActions_StateInterface b = new State_battle();
+                Troop r  = runCombat(chosenCard1,chosenCard2);
+                if(a.getName(r) == b.getName(chosenCard1)) {
+                    a = new State_battle();
+                    int dmg = a.getGroundDamage(chosenCard1);
+                    plr2.get_tower().getAttacked(dmg,score,1);
+                } else if (a.getName(r) == b.getName(chosenCard2)) {
+                    a = new State_battle();
+                    int dmg = a.getGroundDamage(chosenCard2);
+                    plr1.get_tower().getAttacked(dmg,score,2);
+                } else {
+
+                }
             }
+            plr1.upMana();
+            plr2.upMana();
         }
 
     }
@@ -190,4 +211,66 @@ public class GameController {
         player.setMana(1); // Always gain 1 mana regardless of play
         return chosen;
     }
+
+    public Troop runCombat(Troop t1, Troop t2) {
+        TroopActions_StateInterface a = new State_battle();
+        TroopActions_StateInterface b = new State_battle();
+        t1.set_state(a);
+        t2.set_state(b);
+
+        int maxTicks = Math.max(a.getAtkSpeed(t1), b.getAtkSpeed(t2));
+
+        System.out.println("Combat begins: " + a.getName(t1) + " vs " + b.getName(t2));
+
+        for (int tick = 1; tick <= maxTicks; tick++) {
+            System.out.println("Tick " + tick);
+
+            // Troop 1 attacks
+            if (tick <= a.getAtkSpeed(t1)) {
+                if (b.getType(t2).equalsIgnoreCase("Ground")) {
+                    int newDef = b.getCurrGroundDefense(t2) - a.getCurrGroundDamage(t1);
+                    b.setCurrGroundDefense(t2, Math.max(newDef, 0));
+                } else {
+                    int newDef = b.getCurrAirDefense(t2) - a.getCurrAirDamage(t1);
+                    b.setCurrAirDefense(t2, Math.max(newDef, 0));
+                }
+            }
+
+            // Troop 2 attacks
+            if (tick <= b.getAtkSpeed(t2)) {
+                if (a.getType(t1).equalsIgnoreCase("Ground")) {
+                    int newDef = a.getCurrGroundDefense(t1) - b.getCurrGroundDamage(t2);
+                    a.setCurrGroundDefense(t1, Math.max(newDef, 0));
+                } else {
+                    int newDef = a.getCurrAirDefense(t1) - b.getCurrAirDamage(t2);
+                    a.setCurrAirDefense(t1, Math.max(newDef, 0));
+                }
+            }
+
+            // Print status
+            System.out.println(a.getName(t1) + " - G_DEF: " + a.getCurrGroundDefense(t1) + " A_DEF: " + a.getCurrAirDefense(t1));
+            System.out.println(b.getName(t2) + " - G_DEF: " + b.getCurrGroundDefense(t2) + " A_DEF: " + b.getCurrAirDefense(t2));
+
+            // Check for death after each tick
+            boolean t1Dead = a.getCurrGroundDefense(t1) <= 0 && a.getCurrAirDefense(t1) <= 0;
+            boolean t2Dead = b.getCurrGroundDefense(t2) <= 0 && b.getCurrAirDefense(t2) <= 0;
+
+            if (t1Dead && t2Dead) {
+                System.out.println("Both troops destroyed.");
+                return null;
+            } else if (t1Dead) {
+                System.out.println(a.getName(t1) + " destroyed.");
+                return t2;
+            } else if (t2Dead) {
+                System.out.println(b.getName(t2) + " destroyed.");
+                return t1;
+            }
+        }
+
+        // If after all ticks both are still alive
+        System.out.println("Combat ends in mutual survival. Both troops disappear.");
+        return null;
+    }
 }
+
+
